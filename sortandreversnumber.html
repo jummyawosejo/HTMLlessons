@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            array sorting
+        </title>
+    </head>
+    <body>
+        <h1> 
+            array sorting in js
+        </h1>
+        <p>
+            click the button tho sort the array in ascending order.</p>
+            <button  onclick="ascending()">ascending order</button>
+            <p id="demo"></p>
+        <script>
+           var point=[2,14,4,16,6,60,20];
+            document.getElementByTd("demo").innerHTML=point;
+            function ascending(){
+                point.sort(function(a,b){return a-b})
+                document.getElementByTd("demo").innerHTML = point;
+            }
+        </script>
+    </body>
+</html>
