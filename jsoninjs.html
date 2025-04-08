@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            json in js
+        </title>
+    </head>
+    <body>
+        <h1>
+            convert js object into a json string and send it to the server
+        </h1>
+        <p id="result"></p>
+        <script>
+            var x={name:"mystery",age:8,grade:2, gender:female}
+            var  myJSON=JSON.stringify(x)//converting object to JSON string
+            var  myobject=JSON.parse(myJSON)//converting JSONSTRING to jsobject
+        </script>
+    </body>
+</html>
