@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            palindrome app using js
+        </title>
+    </head>
+    <body>
+        <h2> js palindrome checking function</h2>
+        <p id="demo"></p>
+        <script>
+           function palindrome(mystring){
+            var input=mystring.replace(/[^A-Z0-9]/ig,  "").toLowerCase;
+            var reversvedinput=input.split('').reversed().join('');
+
+            if (input===reversedinput){
+                document.getElementById("demo").innerHTML=mystring +" is a palindrome";
+            }
+            else{
+                document.getElementById("demo").innerHTML=mystring +"  is not a palindrome";
+            }
+           }
+           //function call
+           palindrome("civic")
+        </script>
+    </body>
+</html>
