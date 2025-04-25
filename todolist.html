@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            To Do List
+        </title>
+    </head>
+    <body>
+        <h2>
+            To Do List
+        </h2>
+        <h3> add your to do list</h3>
+        <form id="myForm">
+            <input id="myInput" type="text">
+            <button> add</button>
+        </form>
+        <ul id="myitem"></ul>
+        <script>
+            var myForm=documet.getElementById("myForm");
+            var myInput=documet.getElementById("myInput");
+            var myitem=documet.getElementById("myItem");
+            myform.addEventListener("submit", function(event){
+                event.preventDefault()
+                createItem(myInput.value)
+            })
+            function createItem(inputItems){
+                var items=`<li>${
+                    <button onclick ="deleteElement(this)">delete</button></li>`
+                }
+            }
+        </script>
+    </body>
+</html>
